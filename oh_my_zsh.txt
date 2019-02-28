@@ -1,0 +1,14 @@
+1.安装zsh
+sudo apt-get install zsh
+
+2.查看是否安装成功
+cat /etc/shells
+
+3.安装oh-my-zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+
+4.文件配置
+cat ~/.bashrc  拷贝配置文件到  sudo vim ~/.zshrc
+
+5.设置默认启动zsh
+chsh -s /bin/zsh
