@@ -1,0 +1,12 @@
+# 1. Linux 创建文件，输入内容：
+cd ~
+touch .git-credentials
+vim .git-credentials
+https://{username}:{password}@github.com
+
+# 2.在终端输入：
+git config --global credential.helper store
+
+# 3.打开～/.gitconfig文件，会发现多了一项：
+[credential]
+    helper = store
