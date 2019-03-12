@@ -1,0 +1,19 @@
+1.创建桌面文件:
+sudo vim /usr/share/applications/pycharm.desktop
+
+2.编辑:
+[Desktop Entry]
+Type=Application
+Name=Pycharm
+GenericName=Pycharm2018
+Comment=Pycharm2016:The Python IDE
+Exec="/home/dev/pycharm-2018.3.5/bin/pycharm.sh" %f 
+Icon=/home/dev/pycharm-2018.3.5/bin/pycharm.png
+Terminal=pycharm
+Categories=Pycharm;
+
+3.拷贝到桌面:
+cp /usr/share/applications/pycharm.desktop /home/dev/Desktop
+
+4.添加可执行权限:
+chmod +x /home/dev/Desktop/pycharm.desktop
