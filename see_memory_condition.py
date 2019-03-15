@@ -1,0 +1,12 @@
+安装smem 图形化查看内存
+
+1.参考地址
+https://linux.cn/article-4492-1.html#4_2147
+
+2.开始安装
+sudo apt-get install smem  
+
+3.查看内存使用状况
+sudo smem 
+sudo smem -u 
+sudo smem --pie name -c "pss" 
