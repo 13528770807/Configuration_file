@@ -1,0 +1,10 @@
+解决ubuntu分辨率
+
+"解决ubuntu安装后只有一个800x600的分辨率，且系统设置显示里也只有这个分辨"
+1.修改/etc/default/grub,打开终端用命令：sudo gedit /etc/default/grub
+
+2.找到#GRUB_GFXMODE=800x600这行，把800x600改成你想要的分辨率，比如1920x1080，并去掉这一行前面的#，改后变为GRUB_GFXMODE=1920x1080 ，然后保存
+
+3.打开终端用命令更新grub：sudo update-grub
+
+4.在终端用命令重启：sudo reboot
