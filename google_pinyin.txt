@@ -1,0 +1,10 @@
+# 命令行输入:
+1. sudo apt-get install language-pack-zh-hans
+
+2. sudo apt-get install fcitx-googlepinyin
+
+3. 设置选择fcitx 后 命令行输入:
+ fcitx-configtool
+
+根据框选相应配置
+
