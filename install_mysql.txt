@@ -1,0 +1,23 @@
+1.ubuntu上安装mysql
+sudo apt-get install mysql-server
+sudo apt-get install mysql-client
+sudo apt-get install libmysqlclient-dev
+
+查看mysql安装是否成功
+sudo netstat -tap | grep mysql
+
+2.设置mysql密码
+step1:编辑 sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 配置文件并加入 skip-grant-tables 表示无需密码登录
+
+保存退出后，重启mysql: service mysql restart
+
+step2:无密码登录后 mysql -u root -p ，执行以下六句话：
+use mysql;   然后敲回车
+update user set authentication_string=password("你的密码") where user="root";  然后敲回车
+flush privileges;  然后敲回车
+
+select user,plugin from user;  查看: auth_socket
+update user set authentication_string=password("ln122920"),plugin='mysql_native_password' where user='root';
+select user,plugin from user;  查看: mysql_native_password
+
+step3：重新进入到mysqld.cnf文件中去把刚开始加的 skip-grant-tables 这条语句给注释掉
