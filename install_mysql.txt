@@ -13,7 +13,7 @@ step1:编辑 sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 配置文件并加入 s
 
 step2:无密码登录后 mysql -u root -p ，执行以下六句话：
 use mysql;   然后敲回车
-update user set authentication_string=password("你的密码") where user="root";  然后敲回车
+update user set authentication_string=password("你的密码") where user="root";  
 flush privileges;  然后敲回车
 
 select user,plugin from user;  查看: auth_socket
