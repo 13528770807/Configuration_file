@@ -8,7 +8,6 @@ sudo netstat -tap | grep mysql
 
 2.设置mysql密码
 step1:编辑 sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 配置文件并加入 skip-grant-tables 表示无需密码登录
-
 保存退出后，重启mysql: service mysql restart
 
 step2:无密码登录后 mysql -u root -p ，执行以下六句话：
