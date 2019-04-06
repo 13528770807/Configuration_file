@@ -1,0 +1,12 @@
+关闭关机动画：
+
+$ sudo vim /etc/default/grub
+
+将GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”改成GRUB_CMDLINE_LINUX_DEFAULT=” “
+
+执行sudo update-grub使其生效：
+
+$ sudo update-grub
+
+重启后即可正常关机重启
+
