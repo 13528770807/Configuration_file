@@ -1,0 +1,3 @@
+# sudo_with_pip_报错
+
+sudo -H pip install scrapy
