@@ -1,3 +1,4 @@
+# 清华源
 # 1.编辑
 sudo vim /etc/apt/source.list
 
