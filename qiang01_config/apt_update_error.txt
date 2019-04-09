@@ -1,4 +1,4 @@
-# apt更新报错处理
+# apt更新报错处理.
 
 sudo pkill -KILL appstreamcli
 
