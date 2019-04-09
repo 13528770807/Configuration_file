@@ -1,4 +1,4 @@
-可以ping通，但是ssh/xftp无法连接linux
+可以ping通，但是ssh/xftp无法连接linux.
 1.sudo ufw disable #关闭防火墙
 ###
 在ubuntu 下 如何开启防火墙：
