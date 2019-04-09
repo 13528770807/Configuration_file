@@ -1,4 +1,4 @@
-1. 我们可以先将目录都改成英文的。
+1. 我们可以先将目录都改成英文的
 export LANG=en_US
 
 2. xdg-user-dirs-gtk-update
