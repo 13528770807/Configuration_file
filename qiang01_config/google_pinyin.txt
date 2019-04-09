@@ -1,4 +1,4 @@
-# 命令行输入:
+# 命令行输入
 1. sudo apt-get install language-pack-zh-hans
 
 2. sudo apt-get install fcitx-googlepinyin
