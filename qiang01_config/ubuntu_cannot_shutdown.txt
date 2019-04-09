@@ -1,4 +1,4 @@
-关闭关机动画：
+关闭关机动画
 
 $ sudo vim /etc/default/grub
 
