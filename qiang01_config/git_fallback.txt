@@ -1,0 +1,2 @@
+# 回退到上一版本
+git reset --hard HEAD^
