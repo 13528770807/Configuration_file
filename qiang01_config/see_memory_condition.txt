@@ -1,4 +1,4 @@
-安装smem 图形化查看内存
+安装smem 图形化查看内存.
 
 1.参考地址
 https://linux.cn/article-4492-1.html#4_2147
