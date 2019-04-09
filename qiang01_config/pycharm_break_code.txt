@@ -1,4 +1,4 @@
-启动:
+启动
 cd /bin
 sh ./pycharm.sh
 
