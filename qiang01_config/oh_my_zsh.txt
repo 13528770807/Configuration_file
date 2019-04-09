@@ -1,4 +1,4 @@
-# zsh配置oh_my_zsh过程
+# zsh配置oh_my_zsh过程.
 1.安装zsh
 sudo apt-get install zsh
 
