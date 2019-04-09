@@ -1,4 +1,4 @@
-# sublime安装流程
+# sublime安装流程.
 1. 在Ubuntu下 按Ctrl +Alt+T 打开命令窗口
 
 2. 添加sublime Text3 的仓库
