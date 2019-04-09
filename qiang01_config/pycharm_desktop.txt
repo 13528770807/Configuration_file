@@ -1,4 +1,4 @@
-1.创建桌面文件:
+1.创建桌面文件
 sudo vim /usr/share/applications/pycharm.desktop
 
 2.编辑:
