@@ -1,0 +1,5 @@
+# 编辑
+1.sudo gedit /usr/bin/pip
+
+# 修改
+2.from pip._internal import main
