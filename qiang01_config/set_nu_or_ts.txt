@@ -1,0 +1,9 @@
+1.显示行号
+vi ~/.vimrc 或者 vi /etc/vim/vimrc
+set nu
+
+2.tab为4个空格，换行保持当前缩进
+set ts=4
+set expandtab
+set autoindent
+
