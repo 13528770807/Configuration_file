@@ -1,6 +1,6 @@
 # 清华源
 # 1.编辑
-sudo vim /etc/apt/source.list
+sudo vim /etc/apt/sources.list
 
 # 2.替换
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
