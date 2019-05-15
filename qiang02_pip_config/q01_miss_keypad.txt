@@ -1,0 +1,5 @@
+解决linux右上角键盘小图标消失的问题
+
+killall fcitx
+
+fcitx -d
