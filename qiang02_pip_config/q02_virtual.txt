@@ -1,0 +1,13 @@
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+
+mkdir $HOME/.virtualenvs
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+source ~/.bashrc
+
+mkvirtualenv -p python3 py3_flask
+
+# sudo apt-get install python3-distutils
