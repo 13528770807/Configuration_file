@@ -3,6 +3,7 @@ sudo pip install virtualenvwrapper
 
 mkdir $HOME/.virtualenvs
 
+sudo vim ~/.bashrc
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
