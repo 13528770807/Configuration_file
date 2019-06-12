@@ -1,0 +1,41 @@
+https://www.redis.net.cn/
+
+# 1.解压/安装
+cp ~/Downloads/redis-5.0.4.tar.gz /opt
+tar -zxvf redis-5.0.4.tar.gz
+cd redis-5.0.4
+make
+
+# 2.运行
+src/redis-server  # 启动服务器
+src/redis-cli  # 启动客户端
+"""
+redis> set foo bar
+OK
+redis> get foo
+"bar"
+"""
+
+# 3.修改配置文件
+# bind 127.0.0.1  # 注释, 取消本地回环, 接受远程连接 
+daemonize yes  # no 改为 yes, 后台运行
+protected-mode no  # yes 改为 no, 解决安全模式引起的报错
+
+# 4.移动配置文件
+mkdir /etc/redis
+chmod 777 /etc/redis
+cp redis.conf /etc/redis/
+
+# kill 并 后台运行
+pkill -9 redis-server
+src/redis-server /etc/redis/redis.conf
+
+# 查看
+ps aux | grep redis-server
+
+# 运程连接
+src/redis-cli -h 192.168.1.81 -p 6379
+
+
+
+
