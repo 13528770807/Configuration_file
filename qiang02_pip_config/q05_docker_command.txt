@@ -1,0 +1,27 @@
+docker
+
+docker run -i -t ubuntu:15.10 /bin/bash  # docker 与终端交互　-i 输入　-t　终端
+
+# 不使用管理员操作docker
+sudo usermod -aG docker dev
+
+# docker pull training/webapp  # 载入镜像
+docker run -d -P training/webapp python app.py # -p 后台信息显示到主机上
+
+docker ps # 查看
+
+docker run -d -p 5000:5000 training/webapp python app.py  # 运行　-p 设置端口
+
+docker port bf08b7f2cd89  # 查看端口
+
+docker logs -f bf08b7f2cd89  # 实时查看日志 相当于 tail -f
+
+docker stop wizardly_chandrasekhar  # 关闭
+
+docker start wizardly_chandrasekhar  # 开启
+
+docker rm wizardly_chandrasekhar  #　删除，删除前要关闭
+
+docker top wizardly_chandrasekhar  # 查看进程
+
+docker inspect wizardly_chandrasekhar  #　查看低层信息
