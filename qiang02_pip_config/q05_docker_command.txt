@@ -1,6 +1,7 @@
 docker
 
-docker run -i -t ubuntu:15.10 /bin/bash  # docker 与终端交互　-i 输入　-t　终端
+docker pull ubuntu:18.04  # 可以提前拉下来
+docker run -i -t ubuntu:18.04 /bin/bash  # docker 与终端交互　-i 输入　-t　终端
 
 # 不使用管理员操作docker
 sudo usermod -aG docker dev

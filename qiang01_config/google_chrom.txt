@@ -16,3 +16,7 @@ sudo apt-get install google-chrome-stable
 
 /usr/bin/google-chrome-stable
 7、在浏览器图标上右键，将启动器锁定
+
+# 删除谷歌浏览器
+sudo apt-get autoremove --purge google-chrome-stable
+卸载chrome后， 删除～/.config/google-chrome，重新安装。
