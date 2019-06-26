@@ -17,7 +17,7 @@ update user set authentication_string=password("你的密码") where user="root"
 flush privileges;  然后敲回车
 
 select user,plugin from user;  查看: auth_socket
-update user set authentication_string=password("ln122920"),plugin='mysql_native_password' where user='root';
+update user set authentication_string=password("你的密码"),plugin='mysql_native_password' where user='root';
 select user,plugin from user;  查看: mysql_native_password
 
 step3：重新进入到mysqld.cnf文件中去把刚开始加的 skip-grant-tables 这条语句给注释掉
