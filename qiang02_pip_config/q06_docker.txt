@@ -1,0 +1,68 @@
+Docker 操作
+
+1. 拉取镜像
+docker pull 镜像文件(地址)
+docker load -i 镜像文件(xxx.tar)
+
+2. 创建容器
+创建并进入: docker run -it 镜像 命令
+例:         docker run -it ubuntu /bin/bash
+
+后台运行: docker run -itd 镜像
+例:       docker run -itd ubuntu
+
+2.1 进入已经运行的容器
+    docker exec -it 镜像 命令
+例: docker exec -it ubuntu /bin/bash
+
+2.2 运行/停止/强制停止 容器
+运行: docker container start 容器名/容器id
+停止: docker container stop 容器名/容器id
+强制停止: docker container kill 容器名/容器id
+
+3. 将容器保存为镜像
+    docker commit 容器命 镜像名(自定义命名)
+例: docker commit ubuntu1 ubuntu_new
+
+4. 打包镜像文件到本地
+    docker save -o 保存的文件名(自定义) 镜像名
+例: docker save -o ubuntu_new_file.tar ubuntu_new
+
+
+Docker 安装
+
+1. 更新ubuntu的apt源索引
+sudo apt-get update
+
+2. 安装包允许apt通过HTTPS使用仓库
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+
+3. 添加Docker官方GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+4. 设置Docker稳定版仓库
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+5. 添加仓库后，更新apt源索引
+sudo apt-get update
+
+6. 安装最新版Docker CE（社区版）
+sudo apt-get install docker-ce
+
+test:检查Docker CE是否安装正确
+sudo docker run hello-world
+
+Docker 启动与停止
+sudo servce docker start
+sudo service docker stop 
+sudo service docker restart
+
+避免每次使用sudo ,设置权限, """注意执行后须注销重新登录"""
+sudo usermod -a -G docker $USER
