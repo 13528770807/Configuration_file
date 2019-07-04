@@ -1,19 +1,19 @@
 Docker 操作
 
 1. 拉取镜像
-docker pull 镜像文件(地址)
+docker pull 镜像文件(名/地址)
 docker load -i 镜像文件(xxx.tar)
 
 2. 创建容器
-创建并进入: docker run -it 镜像 命令
+创建并进入: docker run -it 镜像名 命令
 例:       docker run -it ubuntu /bin/bash
 指定用户名: docker run -it --name=ubuntu1 ubuntu /bin/bash
 
-后台运行: docker run -itd 镜像
+后台运行: docker run -itd 镜像名
 例:      docker run -itd ubuntu
 
 2.1 进入已经运行的容器
-    docker exec -it 容器 命令
+    docker exec -it 容器名/容器id 命令
 例: docker exec -it ubuntu /bin/bash
 
 2.2 运行/停止/强制停止 容器
