@@ -6,10 +6,10 @@ docker load -i 镜像文件(xxx.tar)
 
 2. 创建容器
 创建并进入: docker run -it 镜像 命令
-例:         docker run -it ubuntu /bin/bash
+例:        docker run -it ubuntu /bin/bash
 
 后台运行: docker run -itd 镜像
-例:       docker run -itd ubuntu
+例:      docker run -itd ubuntu
 
 2.1 进入已经运行的容器
     docker exec -it 镜像 命令
@@ -26,7 +26,7 @@ docker load -i 镜像文件(xxx.tar)
 
 4. 打包镜像文件到本地
     docker save -o 保存的文件名(自定义) 镜像名
-例: docker save -o ubuntu_new_file.tar ubuntu_new
+例: docker save -o ./ubuntu_new_file.tar ubuntu_new
 
 
 Docker 安装
